@@ -1,5 +1,125 @@
-html{
-    padding: 0;
-    margin: 0;  
+:root {
+    --olive-leaf: #606c38ff;
+    --black-forest: #283618ff;
+    --cornsilk: #fefae0ff;
+    --sunlit-clay: #dda15eff;
+    --copperwood: #bc6c25ff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--cornsilk);
+    color: var(--black-forest);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--black-forest);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cornsilk);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--sunlit-clay);
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cornsilk);
+    opacity: 0.6;
+    font-size: 10rem;
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hero p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    color: var(--cornsilk);
+    font-size: 1.2rem;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--copperwood);
+    border-left: 6px solid var(--sunlit-clay);
+    padding-left: 10px;
+    font-size: 2rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 8px;
+}
+
+.content ul ul {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+h2 {
+    transition: 0.3s ease;
+}
+
+h2:hover {
+    color: var(--olive-leaf);
+}
